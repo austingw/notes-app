@@ -1,7 +1,6 @@
 import React from "react";
-//import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
-//import { data } from "./data";
+import Sidebar from "./components/Sidebar";
 import Split from "react-split";
 import { nanoid } from "nanoid";
 
@@ -42,6 +41,12 @@ export default function App() {
     <main>
       {notes.length > 0 ? (
         <Split sizes={[30, 70]} direction="horizontal" className="split">
+          <Sidebar
+            notes={notes}
+            currentNote={findCurrentNote()}
+            setCurrentNoteId={setCurrentNoteId}
+            newNote={createNewNote}
+          />
           {currentNoteId && notes.length > 0 && (
             <Editor currentNote={findCurrentNote()} updateNote={updateNote} />
           )}
