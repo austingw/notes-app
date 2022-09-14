@@ -9,7 +9,7 @@ export default function Sidebar(props) {
         }`}
         onClick={() => props.setCurrentNoteId(note.id)}
       >
-        <h4 className="text-snippet">Note {index + 1}</h4>
+        <h4 className="text-snippet">{note.body.split("/", 1) || "Empty"}</h4>
       </div>
     </div>
   ));
