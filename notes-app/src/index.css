@@ -141,7 +141,8 @@ button:focus {
 
 .delete-icon {
   opacity: 10%;
-  padding-right: 7.5px;
+  margin-right: 7.5px;
+  padding: 5px;
   color: lightgrey;
 }
 
