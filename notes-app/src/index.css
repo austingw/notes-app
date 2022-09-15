@@ -138,3 +138,13 @@ button:focus {
   align-items: center;
   background-color: whitesmoke;
 }
+
+.delete-icon {
+  opacity: 10%;
+  padding-right: 7.5px;
+  color: lightgrey;
+}
+
+.delete-icon:hover {
+  opacity: 100%;
+}
