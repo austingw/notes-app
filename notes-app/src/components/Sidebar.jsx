@@ -12,6 +12,12 @@ export default function Sidebar(props) {
         <h4 className="text-snippet">
           {note.body.split("\n", 1)[0] || "Empty"}
         </h4>
+        <h4
+          className="delete-icon"
+          onClick={(event) => props.removeNote(event, note.id)}
+        >
+          X
+        </h4>
       </div>
     </div>
   ));
